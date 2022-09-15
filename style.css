@@ -1,0 +1,140 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #b67d33;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 450px;
+    margin: 0 auto;
+    background: #EB9321;
+    align-items: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem .2rem black;
+}
+
+.timer {
+    border: solid 3px white;
+    border-radius: 100vw;
+    padding: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 1rem;
+    font-family: Roboto Mono;
+    font-weight: 700;
+    color: white;
+    box-shadow: .3rem .4rem .1rem black;
+    font-variant-numeric: tabular-nums lining-nums;
+}
+
+.button-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+button {
+    background-color: white;
+    border: solid 2px #af701e;
+    border-radius: 100vw;
+    padding: .75rem;
+    width: 7rem;
+    transition: all .08s ease-in-out;
+    /* margin: 1rem; */
+    box-shadow: .2rem .2rem .1rem black;
+    color: #af701e;
+    font-family: orbitron;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #af701e;
+    color: white;
+    transition: all .08s ease-in-out;
+    border-color: #664112;
+    transform: translateY(1.5%) translateX(3%);
+    box-shadow: 0 0 0;
+    cursor: pointer;
+}
